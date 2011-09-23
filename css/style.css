@@ -70,6 +70,10 @@ body {
   background: #9ce;
   color: #444;
 }
+a:link,
+a:visited { color: #6ae; text-decoration: none; transition: all 0.2s linear; }
+a:hover,
+a:active { background: #ffa; }
 
 #container {
   background: #fff;
@@ -107,9 +111,18 @@ article > h1 {
   font-variant: small-caps;
 }
 
+#custom-login-options-login,
+#custom-login-options-logout,
 .logged-out .logged-in-only,
 .logged-in .logged-out-only { display: none; }
 
+#user_info img { border: 1px #eee solid; padding: 1px; margin: 0 10px; }
+#user_info a { font-size: 20px; height: 50px; line-height: 50px; }
+#user_info dl { overflow: hidden; font-size: 12px; line-height: 1.2; max-width: 600px; }
+#user_info dt { color: #aaa; float: left; width: 150px; text-align: right; }
+#user_info dd { margin-left: 160px; }
+#user_status { font-size: 16px; color: #000; line-height: 1.2; }
+#user_status small { display: block; color: #aaa; font-size: 12px; text-align: right; }
 
 button {
   display: inline-block;

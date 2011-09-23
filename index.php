@@ -35,6 +35,16 @@
             <button id="custom-login-options-logout" class="logged-in-only">Log out</button>
           </div>
         </article>
+
+        <article id="user_info" class="logged-in-only">
+          <h1>Logged in as</h1>
+          <div class="populate"></div>
+        </article>
+
+        <article id="user_status" class="logged-in-only">
+          <h1>Status</h1>
+          <div class="populate"></div>
+        </article>
       </section>
 
       <section id="social-plugins">
@@ -46,7 +56,7 @@
             data-show-faces="true"
             data-width="200"
             data-max-rows="1"
-            data-perms="user_about_me,user_activities,user_birthday,user_checkins,user_education_history,user_events,user_groups,user_hometown,user_interests,user_likes,user_location,user_online_presence,user_photos,user_relationship_details,user_relationships,user_religion_politics,user_status,user_videos,user_website,user_work_history,email,"
+            data-perms="user_photos,user_interests,user_likes,user_photo_video_tags,read_stream,user_about_me,user_activities,user_birthday,user_checkins,user_education_history,user_events,user_groups,user_hometown,user_interests,user_likes,user_location,user_online_presence,user_photos,user_relationship_details,user_relationships,user_religion_politics,user_status,user_videos,user_website,user_work_history,email,"
           ></div>
         </article>
 
@@ -72,7 +82,7 @@
   <script defer src="js/script.js"></script>
   <!-- end scripts-->
 
-  <?php // include '/partials/ga.php'; ?>
+  <?php // include 'partials/ga.php'; ?>
   <!--[if lt IE 7 ]>
     <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
     <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
